@@ -17,9 +17,11 @@ Cat& Cat::operator=(const Cat& other)
 {
 	std::cout << "Cat assignment operator called." << std::endl;
 	if (this != &other)
+	{
 		type = other.getType();
 		delete brain;
 		brain = new Brain(*other.brain);
+	}
 	return (*this);
 }
 
