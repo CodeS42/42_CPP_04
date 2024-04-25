@@ -19,7 +19,8 @@ Cat& Cat::operator=(const Cat& other)
 	if (this != &other)
 	{
 		type = other.getType();
-		delete brain;
+		if (brain)
+			delete brain;
 		brain = new Brain(*other.brain);
 	}
 	return (*this);
@@ -27,8 +28,8 @@ Cat& Cat::operator=(const Cat& other)
 
 Cat::~Cat()
 {
-	std::cout << "Cat has been destroyed." << std::endl;
 	delete brain;
+	std::cout << "Cat has been destroyed." << std::endl;
 }
 
 void Cat::makeSound(void) const
