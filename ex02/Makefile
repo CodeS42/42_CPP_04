@@ -10,7 +10,7 @@ OBJS = $(SRCS:.cpp=.o)
 
 INCLUDES = headers
 
-NAME = Animal
+NAME = abstract
 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 

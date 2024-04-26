@@ -5,7 +5,7 @@
 #include "../headers/WrongCat.hpp"
 #include "../headers/Brain.hpp"
 
-int main()
+int main(void)
 {
 	std::cout << "---- FIRST TEST ----" << std::endl;
 	const Animal* j = new Dog();

@@ -5,24 +5,18 @@
 #include "../headers/WrongCat.hpp"
 #include "../headers/Brain.hpp"
 
-int main()
+int main(void)
 {
-	std::cout << "---- FIRST TEST ----" << std::endl;
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
+	Animal *dog = new Dog();
+	Animal *cat = new Cat();
+	// Animal c;
 
-	delete j;
-	delete i;
+	dog->makeSound();
+	cat->makeSound();
+	// c.makeSound();
 
-	std::cout << "---- SECOND TEST ----" << std::endl;
-	Animal *tab[4];
-	tab[0] = new Cat();
-	tab[1] = new Cat();
-	tab[2] = new Dog();
-	tab[3] = new Dog();
-
-	for(int i = 0 ; i < 4 ; i++)
-		delete tab[i];
+	delete dog;
+	delete cat;
 
 	return (0);
 }
