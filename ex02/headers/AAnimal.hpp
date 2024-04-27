@@ -4,16 +4,16 @@
 # include <iostream>
 # include <ctype.h>
 
-class Animal
+class AAnimal
 {
 	protected:
 		std::string type;
 
 	public:
-		Animal();
-		Animal(const Animal& obj);
-		Animal& operator=(const Animal& other);
-		virtual ~Animal();
+		AAnimal();
+		AAnimal(const AAnimal& obj);
+		AAnimal& operator=(const AAnimal& other);
+		virtual ~AAnimal();
 		virtual void makeSound(void) const = 0;
 		std::string getType(void) const;
 };

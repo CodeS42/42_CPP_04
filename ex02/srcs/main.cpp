@@ -1,4 +1,4 @@
-#include "../headers/Animal.hpp"
+#include "../headers/AAnimal.hpp"
 #include "../headers/Cat.hpp"
 #include "../headers/Dog.hpp"
 #include "../headers/WrongAnimal.hpp"
@@ -7,13 +7,13 @@
 
 int main(void)
 {
-	Animal *dog = new Dog();
-	Animal *cat = new Cat();
-	// Animal c;
+	AAnimal *dog = new Dog();
+	AAnimal *cat = new Cat();
+	// AAnimal animal;
 
 	dog->makeSound();
 	cat->makeSound();
-	// c.makeSound();
+	// animal.makeSound();
 
 	delete dog;
 	delete cat;
